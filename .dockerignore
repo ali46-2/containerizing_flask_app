@@ -1,4 +1,5 @@
-venv
 Dockerfile
 .dockerignore
+venv
+.gitignore
 README.md
