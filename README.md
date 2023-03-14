@@ -32,7 +32,7 @@ A simple Python app that uses the Flask web framework as an endpoint to get infe
   ```
   * Run the app
   ```
-  py .\scripts\server.py
+  python .\scripts\server.py
   ```
   * The app is now running on port `localhost:5000`. The model inference endpoint is at `localhost:5000/api`. You can send a GET request with the input passed into the url to get the result as JSON. Example usage:
   ```
