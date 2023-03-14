@@ -7,5 +7,5 @@ data = pd.read_csv(csv_path)
 x, y = data[['YearsExperience']], data[['Salary']]
 
 model = LinearRegression()
-model.fit(x, y)
+model.fit(x.values, y.values)
 pickle.dump(model, open(model_path, 'wb'))
