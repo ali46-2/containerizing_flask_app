@@ -10,11 +10,11 @@ A simple Python app that uses the Flask web framework as an endpoint to get infe
   
   * Create container from image and run the container:
   ```
-  docker run --name flask_model_inference_container -p 8000:5000 flask_model_inference
+  docker run --name flask_model_inference_container -p 5000:5000 flask_model_inference
   ```
-  * The app is now running on port `localhost:8000`. The model inference endpoint is at `localhost:8000/api`. You can send a GET request with the input passed into the url to get the result as JSON. Example usage:
+  * The app is now running on port `localhost:5000`. The model inference endpoint is at `localhost:5000/api`. You can send a GET request with the input passed into the url to get the result as JSON. Example usage:
   ```
-  localhost:8000/api/5
+  localhost:5000/api/5
   ```
 ### Local
   If you prefer to run the app locally, then you can use the following commands inside the root folder of this project. These instructions are assuming you are using Windows.
@@ -36,5 +36,5 @@ A simple Python app that uses the Flask web framework as an endpoint to get infe
   ```
   * The app is now running on port `localhost:5000`. The model inference endpoint is at `localhost:5000/api`. You can send a GET request with the input passed into the url to get the result as JSON. Example usage:
   ```
-  localhost:8000/api/5
+  localhost:5000/api/5
   ```
