@@ -10,7 +10,6 @@ model = pickle.load(open(model_path, 'rb'))
 @app.route('/api/<val>')
 def predict(val):
     prediction = model.predict(np.array([[float(val)]]))
-    prediction.item()
     return jsonify(prediction.item())
 
 if __name__ == '__main__':
